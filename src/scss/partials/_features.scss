@@ -1,0 +1,76 @@
+.features__top {
+  padding-top: 7.5rem;
+
+  @include breakpoint-up(large) {
+    padding-top: 15rem;
+  }
+}
+
+.features__details {
+  padding-top: 5.375rem;
+
+  @include breakpoint-up(large) {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.features > .container {
+  padding-inline: 1.75rem;
+}
+
+.feature {
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
+
+  &__header {
+    padding-bottom: 3.875rem;
+
+    &--title {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      font-size: 1.3rem;
+      font-family: $ff-heading;
+      letter-spacing: 0.05rem;
+      color: $neutral-dark-violet;
+    }
+
+    &--subheading {
+      color: $neutral-dark-grayish-violet;
+      font-size: 0.9rem;
+
+      @include breakpoint-up(large) {
+        max-width: 20rem;
+      }
+    }
+  }
+
+  &__container {
+    width: 1.5rem;
+    // padding: 1.6rem 2.4rem;
+    border-radius: 50%;
+
+    margin-inline: auto;
+    position: relative;
+
+    @include breakpoint-up(large) {
+      margin-inline: initial;
+      display: initial;
+    }
+
+    &__icon {
+      width: 4rem;
+      height: auto;
+      color: #fff;
+      margin-inline: auto;
+
+      @include breakpoint-up(large) {
+        margin-inline: initial;
+      }
+    }
+  }
+}

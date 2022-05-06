@@ -1,0 +1,15 @@
+{
+  "name": "insure-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch src/scss:dist/css",
+    "sass": "sass --watch src/sass:dist/newCss"
+  },
+  "author": "Adhik",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

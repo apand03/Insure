@@ -1,0 +1,50 @@
+.work.section__top {
+  margin-top: 5.25rem;
+}
+
+.work__container {
+  background-color: $primary-dark-violet;
+  background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  text-align: center;
+  padding: 4.2rem 2.625rem;
+  margin-inline: 2rem;
+
+  @include breakpoint-up(sm-md) {
+    background-size: 25%;
+    background-position: right top;
+  }
+
+  @include breakpoint-up(large) {
+    background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+    padding: 2.1rem 5rem;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right -5% top;
+  }
+}
+
+.work__header {
+  @include breakpoint-up(large) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--title {
+    color: #fff;
+    font-family: $ff-heading;
+    font-size: 1.85rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 2.75rem;
+
+    @include breakpoint-up(large) {
+      text-align: left;
+      font-size: 2.625rem;
+      max-width: 25rem;
+      margin-top: 2rem;
+    }
+  }
+}
